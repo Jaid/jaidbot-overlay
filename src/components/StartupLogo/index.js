@@ -1,15 +1,20 @@
 import React from "react"
 import PropTypes from "prop-types"
 import classnames from "classnames"
-import {connect} from "react-redux"
-import StartupLogo from "components/StartupLogo"
 
 import css from "./style.scss"
 
-@connect(state => ({
-  loginInfo: state.login,
-}))
-export default class extends React.Component {
+/**
+  * @typedef {{
+  *   className: *,
+  * }} Props
+  */
+
+/**
+  * @class
+  * @extends {React.Component<Props>}
+  */
+export default class StartupLogo extends React.Component {
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -21,10 +26,8 @@ export default class extends React.Component {
   }
 
   render() {
-    return <div className={classnames(css.container, this.props.className)}>
-    abc
-      <StartupLogo/>
-    </div>
+    const content = <span className={css.content}>abc<br/>def</span>
+    return <div className={classnames(css.container, this.props.className)}/>
   }
 
 }

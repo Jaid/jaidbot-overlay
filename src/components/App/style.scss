@@ -1,43 +1,17 @@
 @import url("modern-normalize");
 
 body {
-  color: #DCDDDE;
-  background: #1e1e1e;
+  background: transparent;
+  color     : white;
+  text-shadow: 0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    0 0 3px black,
+    0 0 10px black;
+  font-size  : 32px;
+  font-family: Ubuntu, sans-serif;
 }
 
-::-webkit-scrollbar {
-  width: 2px;
-}
-
-::-webkit-scrollbar-thumb {
-  width: 2px;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.container {
-  display: flex;
-}
-
-.previews {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start;
-  height: 100vh;
-  max-width: 200px;
-}
-
-.previewsRight {
-  flex-direction: row-reverse;
-}
-
-.controls {
-  height: 100vh;
-  overflow: auto;
-  padding: 8px;
-}
-
-.control {
-  margin: 0.5em;
+.container>* {
+  color: red;
 }

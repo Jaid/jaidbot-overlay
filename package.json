@@ -22,6 +22,7 @@
     "redux": "^4.0.4",
     "redux-action": "^1.2.2",
     "redux-form": "^8.2.6",
+    "redux-sock": "^2.0.0",
     "redux-thunk": "^2.3.0",
     "shortid": "^2.2.15",
     "socket.io-client": "^2.3.0"
@@ -44,7 +45,7 @@
   },
   "scripts": {
     "clean": "rimraf dist/ test/**/dist/",
-    "start": "webpackPort=1212 START_HOT=1 NODE_ENV=development webpack-dev-server",
+    "start": "backendHost=localhost:17444 webpackPort=1212 START_HOT=1 NODE_ENV=development webpack-dev-server",
     "build:prod": "NODE_ENV=production webpack",
     "build:dev": "NODE_ENV=development webpack",
     "release": "npm run clean && npm test && git tag v$npm_package_version && git push --tags && opn https://github.com/$npm_package_author_name/$(basename $PWD)/releases/new?tag=v$npm_package_version"
