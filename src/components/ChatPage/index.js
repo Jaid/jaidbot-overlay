@@ -29,7 +29,7 @@ function orderChatter(chatter) {
   * @class
   * @extends {React.Component<Props>}
   */
-export default class ChatPage extends React.Component {
+export default class extends React.Component {
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -52,7 +52,8 @@ export default class ChatPage extends React.Component {
       const style = {
         border: `1px solid ${roles[chatter.role]?.borderColor || "black"}`,
       }
-      return <Tooltip key={chatter.login} html={chatter.displayName}>
+      const tooltip = <div><img className={css.inlineAvatar} src={avatar}/><br/>{chatter.displayName}<br/>{chatter.login}</div>
+      return <Tooltip key={chatter.login} html={tooltip}>
         <img className={css.chatter} src={avatar} style={style}/>
       </Tooltip>
     })
