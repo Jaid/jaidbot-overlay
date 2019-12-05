@@ -3,9 +3,10 @@ const ghostChatters = [
   "commanderroot",
   "nightbot",
   "jaidbot",
-  "jaidchen",
   "jaidschrott",
   "streamlabs",
+  "lurxx",
+  "communityshowcase"
 ]
 
 export default chatter => {
