@@ -1,12 +1,20 @@
 const ghostChatters = [
+  "alfredjudokus100289",
   "anotherttvviewer",
   "commanderroot",
-  "nightbot",
+  "communityshowcase",
+  "itsvodoo"
   "jaidbot",
   "jaidschrott",
-  "streamlabs",
   "lurxx",
-  "communityshowcase"
+  "nightbot",
+  "s1faka",
+  "streamelements",
+  "streamlabs",
+  "v_and_k",
+  "virgoproz",
+  "winsock",
+  "zanekyber",
 ]
 
 export default chatter => {
