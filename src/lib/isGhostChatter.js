@@ -3,17 +3,22 @@ const ghostChatters = [
   "anotherttvviewer",
   "commanderroot",
   "communityshowcase",
+  "gzipped",
   "itsvodoo"
   "jaidbot",
   "jaidschrott",
+  "logviewer",
   "lurxx",
+  "moobot",
   "nightbot",
   "s1faka",
   "streamelements",
   "streamlabs",
   "v_and_k",
   "virgoproz",
+  "vivbot",
   "winsock",
+  "wizebot",
   "zanekyber",
 ]
 
