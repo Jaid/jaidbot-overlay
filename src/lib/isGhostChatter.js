@@ -12,6 +12,7 @@ const ghostChatters = [
   "moobot",
   "nightbot",
   "s1faka",
+  "skumshop",
   "streamelements",
   "streamlabs",
   "v_and_k",
