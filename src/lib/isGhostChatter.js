@@ -1,6 +1,7 @@
 const ghostChatters = [
   "alfredjudokus100289",
   "anotherttvviewer",
+  "bloodlustr",
   "commanderroot",
   "communityshowcase",
   "gzipped",
