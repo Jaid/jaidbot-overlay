@@ -26,6 +26,7 @@ const ghostChatters = [
   "winsock",
   "wizebot",
   "zanekyber",
+  "n0tahacker_",
 ]
 
 export default chatter => {
