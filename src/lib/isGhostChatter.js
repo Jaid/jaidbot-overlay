@@ -13,6 +13,7 @@ const ghostChatters = [
   "logviewer",
   "lurxx",
   "moobot",
+  "naughtygirlnextdoor",
   "nightbot",
   "s1faka",
   "skumshop",
