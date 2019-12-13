@@ -2,6 +2,7 @@ const ghostChatters = [
   "alfredjudokus100289",
   "anotherttvviewer",
   "artyrus2",
+  "aten",
   "bloodlustr",
   "commanderroot",
   "communityshowcase",
