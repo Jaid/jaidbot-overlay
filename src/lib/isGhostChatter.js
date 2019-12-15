@@ -7,6 +7,7 @@ const ghostChatters = [
   "commanderroot",
   "communityshowcase",
   "dinu",
+  "gza_",
   "gzipped",
   "itsvodoo",
   "jaidbot",
