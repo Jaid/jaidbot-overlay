@@ -1,10 +1,11 @@
-import classnames from "classnames"
+import "modern-normalize"
+
 import PropTypes from "prop-types"
 import React from "react"
 import {connect} from "react-redux"
 
 import ChatPage from "components/ChatPage"
-import StartupLogo from "components/StartupLogo"
+import Overlay from "components/Overlay"
 
 import query from "src/query"
 
@@ -25,10 +26,10 @@ export default class extends React.Component {
   }
 
   render() {
-    const content = query.chat === undefined ? <StartupLogo/> : <ChatPage/>
-    return <div className={classnames(css.container, this.props.className)}>
-      {content}
-    </div>
+    if (query.chat) {
+      return <ChatPage/>
+    }
+    return <Overlay/>
   }
 
 }

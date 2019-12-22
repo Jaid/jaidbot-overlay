@@ -1,17 +1,6 @@
-@import url("modern-normalize");
-
 body {
-  background: black;
-  color     : white;
-  text-shadow: 0 0 1px black,
-    0 0 1px black,
-    0 0 1px black,
-    0 0 3px black,
-    0 0 10px black;
-  font-size  : 32px;
+  background : black;
+  color      : white;
   font-family: Ubuntu, sans-serif;
-}
-
-.container>* {
-  color: red;
+  margin     : 0;
 }
