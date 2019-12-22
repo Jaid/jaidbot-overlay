@@ -11,4 +11,5 @@ export default configure({
   offline: false,
   pwa: false,
   configOutput: true,
+  createCssFile: true,
 })
