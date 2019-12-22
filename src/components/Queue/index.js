@@ -26,7 +26,7 @@ export default class Queue extends React.Component {
   }
 
   render() {
-    const content = <span>Component Queue</span>
+    const content = <span>A</span>
     return <div className={classnames(css.container, this.props.className)}>
       {content}
     </div>
