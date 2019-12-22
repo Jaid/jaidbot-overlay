@@ -7,6 +7,7 @@ import css from "./style.scss"
 /**
   * @typedef {{
   *   className: *,
+  *   displayName: string
   * }} Props
   */
 
@@ -14,7 +15,7 @@ import css from "./style.scss"
   * @class
   * @extends {React.Component<Props>}
   */
-export default class StartupLogo extends React.Component {
+export default class WhoisToast extends React.Component {
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -23,11 +24,14 @@ export default class StartupLogo extends React.Component {
       PropTypes.arrayOf(PropTypes.string),
       PropTypes.arrayOf(PropTypes.object),
     ]),
+    displayName: PropTypes.string,
   }
 
   render() {
-    const content = <span className={css.content}>abc<br/>def</span>
-    return <div className={classnames(css.container, this.props.className)}/>
+    const content = <span>{this.props.displayName}</span>
+    return <div className={classnames(css.container, this.props.className)}>
+      {content}
+    </div>
   }
 
 }

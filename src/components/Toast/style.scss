@@ -1,0 +1,8 @@
+.container {
+  background                : rgba(0, 0, 0, 0.8);
+  padding                   : 12px;
+  width                     : 600px;
+  position                  : relative;
+  transition-property       : left, border-radius;
+  transition-timing-function: easeInOutBack;
+}
