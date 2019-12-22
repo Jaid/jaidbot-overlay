@@ -1,3 +1,9 @@
 import {parse} from "query-string"
 
-export default parse(document.location.search)
+const query = {}
+
+for (const [key, value] of Object.entries(parse(document.location.search))) {
+  query[key] = value
+}
+
+export default parse()

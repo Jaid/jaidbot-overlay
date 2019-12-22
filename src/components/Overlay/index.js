@@ -28,7 +28,6 @@ export default class Overlay extends React.Component {
   }
 
   render() {
-    console.log(css)
     return <div className={classnames(css.container, this.props.className)}>
       <Queue/>
     </div>
