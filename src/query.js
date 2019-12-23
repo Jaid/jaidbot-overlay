@@ -6,4 +6,4 @@ for (const [key, value] of Object.entries(parse(document.location.search))) {
   query[key] = value
 }
 
-export default parse()
+export default query

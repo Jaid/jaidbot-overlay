@@ -1,9 +1,10 @@
 import immer from "immer"
+import ms from "ms.macro"
 import {combineReducers} from "redux"
 
 import {socketMiddleware} from "lib/socketMiddleware"
 
-function addQueueItemToState(state, itemType, itemPayload) {
+function addToast(state, itemType, itemPayload) {
   const item = {
     type: itemType,
     ...itemPayload,
@@ -16,9 +17,22 @@ function addQueueItemToState(state, itemType, itemPayload) {
 }
 
 const mainReducer = (state, action) => {
+  if (action.type === "queueItemDone") {
+    return immer(state, draft => {
+      draft.queueItem = null
+    })
+  }
+  if (action.type === "nextQueueItem") {
+    return immer(state, draft => {
+      if (state.queueItem === null && state.queueItems.length > 0) {
+        draft.queueItem = draft.queueItems[0]
+        draft.queueItems = draft.queueItems.slice(1)
+      }
+    })
+  }
   if (action.type === "@@socket/connected") {
     return immer(state, draft => {
-      addQueueItemToState(draft, "hello")
+      addToast(draft, "hello")
     })
   }
   if (action.type === "@@socket/received/updateChatters") {
@@ -28,8 +42,9 @@ const mainReducer = (state, action) => {
   }
   if (action.type === "@@socket/received/whois") {
     return immer(state, draft => {
-      addQueueItemToState(draft, "whois", {
+      addToast(draft, "whois", {
         toastProps: action.payload,
+        duration: ms`10 seconds`,
       })
     })
   }

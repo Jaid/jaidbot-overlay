@@ -4,6 +4,8 @@ import React from "react"
 
 import Queue from "components/Queue"
 
+import query from "src/query"
+
 import css from "./style.scss"
 
 /**
@@ -28,7 +30,7 @@ export default class Overlay extends React.Component {
   }
 
   render() {
-    return <div className={classnames(css.container, this.props.className)}>
+    return <div className={classnames({debug: Boolean(query.debug)}, css.container, this.props.className)}>
       <Queue/>
     </div>
   }

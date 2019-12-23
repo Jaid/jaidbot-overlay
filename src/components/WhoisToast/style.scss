@@ -1,3 +1,55 @@
-.container {
+.container {}
 
+.avatar {
+  height: 200px;
+  width : 200px;
+}
+
+.offlineImage {
+  height: 200px;
+}
+
+.top {
+  display: flex;
+}
+
+.imageRow {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.infoList {
+  margin-top     : 4px;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  font-size      : 65%;
+  margin-left    : 30px;
+
+  &>* {
+    display: list-item;
+  }
+}
+
+.nameRow {
+  margin-top     : 4px;
+  margin-left    : 5px;
+  display        : flex;
+  justify-content: space-between;
+}
+
+.twitchId {
+  color: rgba(255, 255, 255, 0.322);
+}
+
+.stream {
+  margin       : 8px;
+  padding      : 8px;
+  border       : 2px solid rgb(255, 58, 58);
+  border-radius: 8px;
+  font-size    : 65%;
+}
+
+.live {
+  color: rgb(255, 58, 58);
 }

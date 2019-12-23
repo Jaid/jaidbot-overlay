@@ -6,6 +6,7 @@ import css from "./style.scss"
 
 /**
   * @typedef {{
+  *   text: string,
   * }} Props
   */
 
@@ -13,10 +14,14 @@ import css from "./style.scss"
   * @class
   * @extends {React.Component<Props>}
   */
-export default class HelloToast extends React.Component {
+export default class TextToast extends React.Component {
+
+  static propTypes = {
+    text: PropTypes.string.isRequired,
+  }
 
   render() {
-    return <span className={css.container}>Hallo! <img className={css.emote} src="https://cdn.discordapp.com/emojis/566166939609858048.gif"/></span>
+    return this.props.text
   }
 
 }

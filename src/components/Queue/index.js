@@ -13,7 +13,8 @@ import css from "./style.scss"
   * @typedef {{
   *   className: *,
   *   queueItem: Object,
-  *   queueItems: Object[]
+  *   queueItems: Object[],
+  *   dispatch: function
   * }} Props
   */
 
@@ -28,7 +29,7 @@ import css from "./style.scss"
   */
 export default class extends React.Component {
 
-  static displayName = "Queue"
+  // static displayName = "Queue"
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -39,6 +40,7 @@ export default class extends React.Component {
     ]),
     queueItem: PropTypes.object,
     queueItems: PropTypes.arrayOf(PropTypes.object),
+    dispatch: PropTypes.func.isRequired,
   }
 
   render() {
@@ -48,8 +50,7 @@ export default class extends React.Component {
     const toastName = `${startCase(this.props.queueItem.type)}Toast`
     const Component = require(`../${toastName}`).default
     const toastProps = this.props.queueItem.toastProps || {}
-    const item = <Toast className={css.toast} component={Component} toastProps={toastProps}/>
-    console.log("Rendering toast!")
+    const item = <Toast className={css.toast} component={Component} duration={this.props.queueItem.duration || ms`6 seconds`} toastProps={toastProps}/>
     return <div className={classnames(css.container, this.props.className)}>
       {item}
     </div>
