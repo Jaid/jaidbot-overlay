@@ -29,6 +29,10 @@ const ghostChatters = [
   "wizebot",
   "zanekyber",
   "n0tahacker_",
+  "nastya6996_",
+  "megaxa",
+  "jaidchen",
+  "electricallongboard",
 ]
 
 export default chatter => {
