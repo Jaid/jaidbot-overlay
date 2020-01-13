@@ -1,11 +1,10 @@
 # Jaidbot Overlay
 
 
-<a href="https://raw.githubusercontent.com/Jaid/jaidbot-overlay/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/jaidbot-overlay?style=flat-square" alt="License"/></a>  
-<a href="https://actions-badge.atrox.dev/Jaid/jaidbot-overlay/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2FJaid%2Fjaidbot-overlay%2Fbadge" alt="Build status"/></a> <a href="https://github.com/Jaid/jaidbot-overlay/commits"><img src="https://img.shields.io/github/commits-since/Jaid/jaidbot-overlay/v0.1.0?style=flat-square&logo=github" alt="Commits since v0.1.0"/></a> <a href="https://github.com/Jaid/jaidbot-overlay/commits"><img src="https://img.shields.io/github/last-commit/Jaid/jaidbot-overlay?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/Jaid/jaidbot-overlay/issues"><img src="https://img.shields.io/github/issues/Jaid/jaidbot-overlay?style=flat-square&logo=github" alt="Issues"/></a>  
+<a href="https://raw.githubusercontent.com/jaid/jaidbot-overlay/master/license.txt"><img src="https://img.shields.io/github/license/jaid/jaidbot-overlay?style=flat-square" alt="License"/></a> <a href="https://github.com/sponsors/jaid"><img src="https://img.shields.io/badge/<3-Sponsor-FF45F1?style=flat-square" alt="Sponsor jaidbot-overlay"/></a>
+<a href="https://actions-badge.atrox.dev/jaid/jaidbot-overlay/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2Fjaid%2Fjaidbot-overlay%2Fbadge" alt="Build status"/></a> <a href="https://github.com/jaid/jaidbot-overlay/commits"><img src="https://img.shields.io/github/commits-since/jaid/jaidbot-overlay/v0.1.0?style=flat-square&logo=github" alt="Commits since v0.1.0"/></a> <a href="https://github.com/jaid/jaidbot-overlay/commits"><img src="https://img.shields.io/github/last-commit/jaid/jaidbot-overlay?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/jaid/jaidbot-overlay/issues"><img src="https://img.shields.io/github/issues/jaid/jaidbot-overlay?style=flat-square&logo=github" alt="Issues"/></a>  
 
 **Web client for Jaidbot.**
-
 
 
 
@@ -34,7 +33,7 @@
 
 Setting up:
 ```bash
-git clone git@github.com:Jaid/jaidbot-overlay.git
+git clone git@github.com:jaid/jaidbot-overlay.git
 cd jaidbot-overlay
 npm install
 ```
