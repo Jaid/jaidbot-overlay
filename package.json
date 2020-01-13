@@ -59,5 +59,6 @@
   },
   "description": "Web client for Jaidbot.",
   "name": "jaidbot-overlay",
-  "title": "Jaidbot Overlay"
+  "title": "Jaidbot Overlay",
+  "funding": "https://github.com/sponsors/jaid"
 }
