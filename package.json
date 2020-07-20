@@ -36,7 +36,7 @@
     "acorn": "^7.3.1",
     "ajv": "^6.12.3",
     "babel-jest": "^26.1.0",
-    "babel-preset-jaid": "^8.0.1",
+    "babel-preset-jaid": "^8.1.0",
     "browserslist-config-jaid-web": "^2.3.0",
     "caniuse-lite": "^1.0.30001104",
     "eslint": "^7.5.0",
