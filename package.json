@@ -63,5 +63,19 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jaid/jaidbot-overlay"
-  }
+  },
+  "homepage": "https://github.com/Jaid/jaidbot-overlay",
+  "keywords": [
+    "jaidbot",
+    "jaidbot-overlay",
+    "obs",
+    "obs-overlay",
+    "obs-studio",
+    "overlay",
+    "page",
+    "single-page-app",
+    "spa",
+    "stream-overlay",
+    "website"
+  ]
 }
