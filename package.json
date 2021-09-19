@@ -78,5 +78,6 @@
     "spa",
     "stream-overlay",
     "website"
-  ]
+  ],
+  "type": "module"
 }
